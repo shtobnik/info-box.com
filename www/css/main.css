@@ -1,0 +1,320 @@
+@charset "UTF-8";
+/*-------------version 21.0--------------*/
+html, body, h1, h2, h3, h4, h5, h6, p, form, fieldset, table, thead, tfoot, tbody, tr, th, td, form, img,
+article, aside, audio, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, video {
+	margin: 0;
+	padding: 0;
+}
+
+article, aside, audio, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, video {
+	display: block;
+}
+
+html, body {
+	font-family: Arial,"Helvetica CY","Nimbus Sans L", sans-serif;
+	min-height: 100%;
+	height: 100%;
+}
+
+html {
+	font-size: 100.01%;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+}
+
+body {
+	font-size: .75em;
+	background: #fff;
+	color: #333;
+	overflow-y: scroll;
+	position: relative;
+}
+h1, h2, h3 {
+	letter-spacing: -.015em;
+	line-height: 1em;
+}
+
+h1 {
+	font-size: 2.5em;
+	margin-bottom: .35em;
+}
+
+h2 {
+	font-size: 1.5em;
+	margin-bottom: 1em;
+}
+
+h3 {
+	font-size: 1.4em;
+	margin-bottom: .5em;
+}
+
+h4 {
+	font-size: 1.155em;
+	margin-bottom: .5em;
+}
+
+h5 {
+	font-size: 1em;
+	font-weight: bold;
+	margin-bottom: .4em;
+}
+
+h6 {
+	font-size: .923em;
+}
+
+p {
+	line-height: 1.308em;
+	margin: 0 0 0;
+	font-size: 1.154em;
+}
+p.small {
+	font-size: 1em;
+	line-height: 1.65em;
+}
+
+ul, ol {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+li {
+	list-style: none;
+}
+
+ul.mdash li {
+	margin-bottom: .25em;
+	padding-left: 20px;
+}
+ul.mdash li em {
+	margin: 0 .25em 0 -1.25em;
+}
+
+nav ul, nav ol {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+q:before, q:after, blockquote:before, blockquote:after {
+	content: "";
+}
+
+img {
+	border: 0;
+	vertical-align: middle;
+	-ms-interpolation-mode: bicubic;
+}
+
+a img {
+	border: 0;
+	cursor: pointer;
+	text-decoration: none;
+}
+a:link, a.novisited:link, a.novisited:visited, .m-main-i-link:hover, .ort-box-text, .more-pages-l-i-link:hover, .catalog-node-menu-l-i-link:hover, .sort-box-text, .g-compare-l-i-text {
+	color: #265992;
+}
+
+a {
+	outline: none;
+}
+a:visited {
+	color: #61c;
+}
+a:visited .m-main-i-text {
+	color: #265992;
+}
+a:visited .underline {
+	color: #265992;
+	border-bottom-color: #265992;
+}
+a:hover .underline {
+	color: #f35d3c;
+}
+a:focus {
+	outline: none;
+}
+
+.submit-btn, .submit-btn:visited {
+	color: #333;
+}
+
+.active a:visited .m-main-i-text {
+	color: #f35d3c;
+}
+
+a:hover, a:active, .visible .more-link {
+	outline: 0;
+	color: #265992;
+}
+
+.underline, .xhr, .cut .xhr {
+	color: #265992;
+}
+
+.underline:hover, .xhr:hover, .cut .xhr:hover {
+	color: #f35d3c;
+}
+
+a:hover,
+a:focus,
+a:active,
+a.novisited:hover,
+a.novisited:focus,
+a.novisited:active,
+a.xhr:hover,
+a.xhr:focus,
+a.xhr:active,
+.node-menu .node-menu-i-title-link:hover,
+.node-menu .node-menu-i-l-i-link:hover,
+.catalog-node-menu-l-i-link-text:hover,
+.underline:hover {
+	color: #f35d3c;
+}
+
+.underline, .user-enter a.xhr, .personal-information a.xhr {
+	border-bottom: 1px dashed #a2b1c7;
+	text-decoration: none;
+}
+.underline:active, .user-enter a.xhr:active, .personal-information a.xhr:active {
+	background: none !important;
+	box-shadow: none !important;
+}
+
+.underline:hover, a:hover .underline {
+	border-color: #f35d3c;
+}
+button, input, select, textarea {
+	color: #333;
+	display: inline-block;
+	font-family: Arial,"Helvetica CY","Nimbus Sans L", sans-serif;
+	font-size: 100%;
+	margin: 0;
+	padding: 0;
+	vertical-align: middle;
+	outline: none;
+}
+
+button::-moz-focus-inner, input::-moz-focus-inner {
+	padding: 0;
+	border: 0;
+}
+
+button, input[type="button"], input[type="reset"], input[type="submit"] {
+	cursor: pointer;
+	-webkit-appearance: button;
+}
+
+input[type="search"] {
+	-webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	box-sizing: content-box;
+	-webkit-appearance: textfield;
+}
+
+input[type="search"]::-webkit-search-decoration, input[type="search"]::-webkit-search-cancel-button {
+	-webkit-appearance: none;
+}
+
+textarea {
+	overflow: auto;
+	vertical-align: top;
+}
+
+button[disabled], input[disabled] {
+	cursor: default;
+}
+
+label {
+	cursor: pointer;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+	width: 100%;
+}
+
+th, td {
+	vertical-align: top;
+}
+
+th {
+	text-align: left;
+}
+::-moz-selection {
+	background: #666;
+	color: #fff;
+	text-shadow: none;
+}
+
+::selection {
+	background: #666;
+	color: #fff;
+	text-shadow: none;
+}
+
+/*------------------------------------main css--------------------------------------*/
+
+
+.wrapper {
+	margin: 200px auto 0;
+	width: 325px;
+}
+h1 {
+	margin-bottom: 40px;
+}
+.slider-b {
+	background: url('/img/comp_plate_graybasic.png') 0 0 no-repeat;
+	height: 340px;
+	width: 325px;
+}
+.slider-content {
+	height: 335px;
+	overflow: hidden;
+	width: 320px;
+}
+.slider-l {
+	text-align: left;
+	width: 5000px;
+}
+.slider-l-i {
+	display: inline-block;
+	margin-right: 10px;
+	padding: 0 4px;
+	vertical-align: top;
+	width: 315px;
+}
+.slider-l-i-content {
+	margin-top: 10px;
+	padding: 0 10px;
+	line-height: 8px;
+}
+.slider-l-i-content h2,
+.slider-l-i-content a {
+	color: #F48C0F;	
+}
+.slider-l-i-content h2 {
+	margin-bottom: 5px
+}
+.slider-l-i-content p,
+.slider-l-i-content a {
+	font-size: 10px;
+}
+.gray {
+	color: #848484;
+	font-size: 8px;
+	margin-top: 10px;
+}
+.note {
+	height: 24px;
+	overflow: hidden;
+	padding-right: 20px;
+}
+.note p {
+	line-height: 11px;
+}
+.btn {
+
+}
