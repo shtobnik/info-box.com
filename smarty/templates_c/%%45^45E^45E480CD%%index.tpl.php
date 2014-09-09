@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.28, created on 2014-09-08 22:03:57
+<?php /* Smarty version 2.6.28, created on 2014-09-09 08:50:51
          compiled from index.tpl */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
 smarty_core_load_plugins(array('plugins' => array(array('function', 'json', 'index.tpl', 17, false),)), $this); ?>
@@ -18,7 +18,7 @@ smarty_core_load_plugins(array('plugins' => array(array('function', 'json', 'ind
 	</head>
 
 	<body>
-		<?php echo smarty_function_json(array('file' => "/home/json-task.com/www/src/info_box.json",'assign' => 'data'), $this);?>
+		<?php echo smarty_function_json(array('file' => "/home/info-box.com/www/src/info_box.json",'assign' => 'data'), $this);?>
 
 		
 		<div class="wrapper">

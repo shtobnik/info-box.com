@@ -14,7 +14,7 @@
 	</head>
 
 	<body>
-		{json file="/home/json-task.com/www/src/info_box.json" assign="data"}
+		{json file="/home/info-box.com/www/src/info_box.json" assign="data"}
 		
 		<div class="wrapper">
 			<header>
