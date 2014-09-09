@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.28, created on 2014-09-09 20:18:07
+<?php /* Smarty version 2.6.28, created on 2014-09-09 21:50:40
          compiled from index.tpl */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
 smarty_core_load_plugins(array('plugins' => array(array('function', 'json', 'index.tpl', 18, false),)), $this); ?>
@@ -46,7 +46,7 @@ smarty_core_load_plugins(array('plugins' => array(array('function', 'json', 'ind
 										<p class="gray"><?php echo $this->_tpl_vars['item']['note']; ?>
 </p>								
 									</div>
-										<a href="#">show details</a>
+									<a href="#" name="details">show details</a>
 								</div>
 							</li>
 						<?php endforeach; endif; unset($_from); ?>

@@ -35,7 +35,7 @@
 										<p>{$item.description}</p>
 										<p class="gray">{$item.note}</p>								
 									</div>
-										<a href="#">show details</a>
+									<a href="#" name="details">show details</a>
 								</div>
 							</li>
 						{/foreach}
