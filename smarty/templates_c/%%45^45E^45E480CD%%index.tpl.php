@@ -1,7 +1,7 @@
-<?php /* Smarty version 2.6.28, created on 2014-09-10 20:38:31
+<?php /* Smarty version 2.6.28, created on 2014-09-10 22:35:34
          compiled from index.tpl */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
-smarty_core_load_plugins(array('plugins' => array(array('function', 'json', 'index.tpl', 18, false),)), $this); ?>
+smarty_core_load_plugins(array('plugins' => array(array('function', 'json', 'index.tpl', 19, false),)), $this); ?>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 //EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html>
 
@@ -11,6 +11,7 @@ smarty_core_load_plugins(array('plugins' => array(array('function', 'json', 'ind
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta http-equiv="content-language" content="ru">
 		<link rel="stylesheet" type="text/css" href="css/main.css" media="all">
+		<!--[if IE 8]></script><link rel="stylesheet" type="text/css" href="css/ie.css" media="all"><![endif]-->
 		<!--[if lte IE 9]><link rel="stylesheet" type="text/css" href="/css/ie.css" media="all"><![endif]-->
 		<!--[if lte IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 		<script src="js/jquery-1.9.1.min.js"></script>

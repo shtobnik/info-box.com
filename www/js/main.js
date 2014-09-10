@@ -51,6 +51,16 @@ $(window).load(function() {
 
 						this_.prev().removeAttr('style');
 
+						$('.list-wrap').removeAttr('style');
+
+						$('.slider-b').removeAttr('style');
+
+						$('.caroufredsel_wrapper').animate({
+
+							height: '280px'
+
+						});
+
 					}, 710);
 
 				}else {
@@ -90,7 +100,7 @@ $(window).load(function() {
 
 						$('.list-wrap').animate({
 
-							height: height+80
+							height: height+82
 
 						});
 

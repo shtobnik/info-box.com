@@ -7,6 +7,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta http-equiv="content-language" content="ru">
 		<link rel="stylesheet" type="text/css" href="css/main.css" media="all">
+		<!--[if IE 8]></script><link rel="stylesheet" type="text/css" href="css/ie.css" media="all"><![endif]-->
 		<!--[if lte IE 9]><link rel="stylesheet" type="text/css" href="/css/ie.css" media="all"><![endif]-->
 		<!--[if lte IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 		<script src="js/jquery-1.9.1.min.js"></script>
