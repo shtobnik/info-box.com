@@ -1,4 +1,5 @@
 $(window).load(function() {
+
 	$('#slider').carouFredSel({
 
 		auto: false,
@@ -15,41 +16,123 @@ $(window).load(function() {
 	});
 
 
+	$('.note').removeAttr('style');
+
 
 	$('[name="details"]').each(function() {
+
 		$(this).on("click", function() {
 
-			var par = $(this).parent(".slider-l-i-content");
-				var this_ = $(this) 
-				this_.prev().addClass('show');
-				var height = $(this).prev().height();
-				this_.prev().removeClass('show');
-				console.log(height);
+			var this_ = $(this),
 
-				par.prev().animate({
+				par = this_.parent(".slider-l-i-content");
+				
+				if( this_.hasClass('show-text') ){
+					
+					this_.removeClass('show-text');
 
-					height: 0,
+					this_.prev().animate({
 
-					opacity: 0,
+						height: 24
 
-				}, 1000);
+					}, 700);
+
+					this_.text('show details');
+
+					setTimeout(function() {
+						
+						par.prev().animate({
+
+							height: 200,
+
+							opacity: 1
+
+						}, 700);
+
+						this_.prev().removeAttr('style');
+
+					}, 710);
+
+				}else {
+
+					this_.prev().addClass('show');
+
+					var height = $(this).prev().height();
+
+					this_.prev().removeClass('show');
+
+					par.prev().animate({
+
+						height: 0,
+
+						opacity: 0
+
+					}, 700);
 
 
-			setTimeout(function() {
+					setTimeout(function() {
 
-				par.prev().hide();
+						this_.text('hide details');
 
-				this_.prev().animate({
+						this_.addClass('show-text');
 
-					height: height+5
+						this_.prev().animate({
 
-				}, 500);
+							height: height+5
 
-			}, 1000);
+						}, 500);
 
+						$('.slider-b').animate({
 
+							height: height+145
+
+						}, 400);
+
+						$('.list-wrap').animate({
+
+							height: height+80
+
+						});
+
+						$('.caroufredsel_wrapper').animate({
+
+							height: height+80
+
+						});
+
+					}, 700);
+
+				}
 			return false;
 
 		});
+
+		$('.btn').on('click', function() {
+
+			var attr = $('.slider-b').attr('style');
+
+			if (typeof attr !== typeof undefined && attr !== false) {
+
+				setTimeout(function() {
+
+					$('.slider-b').removeAttr('style');
+
+					$('.note').removeAttr('style');
+
+					$('.list-wrap').removeAttr('style');
+
+					$('.slider-l-i img').removeAttr('style');
+
+					$('.show-text').text('show details');
+
+					$('.show-text').removeClass('show-text');
+
+				}, 500);
+
+
+			}
+
+		});
+
 	});
 });

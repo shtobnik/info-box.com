@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.28, created on 2014-09-09 21:50:40
+<?php /* Smarty version 2.6.28, created on 2014-09-10 20:38:31
          compiled from index.tpl */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
 smarty_core_load_plugins(array('plugins' => array(array('function', 'json', 'index.tpl', 18, false),)), $this); ?>
@@ -29,28 +29,30 @@ smarty_core_load_plugins(array('plugins' => array(array('function', 'json', 'ind
 
 			<div class="slider-b">
 
-				<section class="slider-content">				
-					<ul class="slider-l" id="slider">
-						<?php $_from = $this->_tpl_vars['data']; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array'); }if (count($_from)):
+				<section class="slider-content">
+					<div class="list-wrap">
+						<ul class="slider-l" id="slider">
+							<?php $_from = $this->_tpl_vars['data']; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array'); }if (count($_from)):
     foreach ($_from as $this->_tpl_vars['item']):
 ?>
-							<li class="slider-l-i">
-								<img src="/img/photos/<?php echo $this->_tpl_vars['item']['img']; ?>
+								<li class="slider-l-i">
+									<img src="/img/photos/<?php echo $this->_tpl_vars['item']['img']; ?>
 ">
-								<div class="slider-l-i-content">
-									<h2><?php echo $this->_tpl_vars['item']['title']; ?>
+									<div class="slider-l-i-content">
+										<h2><?php echo $this->_tpl_vars['item']['title']; ?>
 </h2>
-									<div class="note">
-										<p><?php echo $this->_tpl_vars['item']['description']; ?>
+										<div class="note">
+											<p><?php echo $this->_tpl_vars['item']['description']; ?>
 </p>
-										<p class="gray"><?php echo $this->_tpl_vars['item']['note']; ?>
+											<p class="gray"><?php echo $this->_tpl_vars['item']['note']; ?>
 </p>								
+										</div>
+										<a href="#" name="details">show details</a>
 									</div>
-									<a href="#" name="details">show details</a>
-								</div>
-							</li>
-						<?php endforeach; endif; unset($_from); ?>
-					</ul>
+								</li>
+							<?php endforeach; endif; unset($_from); ?>
+						</ul>
+					</div>
 					<div class="btns clearfix">
 						<a href="#" class="btn left" id="prev"><i></i><span>Prev</span></a>
 						<a href="#" class="btn right" id="next"><span>Next</span><i></i></a>

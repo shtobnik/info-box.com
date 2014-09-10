@@ -251,14 +251,27 @@ h1 {
 	margin-bottom: 40px;
 }
 .slider-b {
-	background: url('/img/comp_plate_graybasic.png') 0 0 no-repeat;
-	height: 340px;
-	width: 325px;
+	/*background: url('/img/comp_plate_graybasic.png') 0 0 no-repeat;*/
+	background: #fcfcfc;
+	background: -moz-linear-gradient(top,  #fcfcfc 0%, #ffffff 13%, #ffffff 84%, #f9f9f9 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fcfcfc), color-stop(13%,#ffffff), color-stop(84%,#ffffff), color-stop(100%,#f9f9f9));
+	background: -webkit-linear-gradient(top,  #fcfcfc 0%,#ffffff 13%,#ffffff 84%,#f9f9f9 100%);
+	background: -o-linear-gradient(top,  #fcfcfc 0%,#ffffff 13%,#ffffff 84%,#f9f9f9 100%);
+	background: -ms-linear-gradient(top,  #fcfcfc 0%,#ffffff 13%,#ffffff 84%,#f9f9f9 100%);
+	background: linear-gradient(to bottom,  #fcfcfc 0%,#ffffff 13%,#ffffff 84%,#f9f9f9 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfcfc', endColorstr='#f9f9f9',GradientType=0 );
+	border-radius: 8px;
+	box-shadow: 2px 2px 6px 1px #d3d3d3;
+	min-height: 340px;
+	width: 312px;
+}
+.list-wrap {
+	min-height: 270px;
 }
 .slider-content {
-	height: 335px;
+	/*height: 335px;*/
 	overflow: hidden;
-	width: 320px;
+	min-height: 335px;
 }
 .slider-l {
 	text-align: left;
@@ -267,10 +280,12 @@ h1 {
 .slider-l-i {
 	display: inline-block;
 	margin-right: 10px;
-	padding: 0 4px;
 	text-align: center;
 	vertical-align: top;
-	width: 315px;
+	width: 312px;
+}
+.slider-l-i img {
+	border-radius: 8px 8px 0 0;
 }
 .slider-l-i-content {
 	margin-top: 15px;

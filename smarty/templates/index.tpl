@@ -24,22 +24,24 @@
 
 			<div class="slider-b">
 
-				<section class="slider-content">				
-					<ul class="slider-l" id="slider">
-						{foreach from=$data item=item}
-							<li class="slider-l-i">
-								<img src="/img/photos/{$item.img}">
-								<div class="slider-l-i-content">
-									<h2>{$item.title}</h2>
-									<div class="note">
-										<p>{$item.description}</p>
-										<p class="gray">{$item.note}</p>								
+				<section class="slider-content">
+					<div class="list-wrap">
+						<ul class="slider-l" id="slider">
+							{foreach from=$data item=item}
+								<li class="slider-l-i">
+									<img src="/img/photos/{$item.img}">
+									<div class="slider-l-i-content">
+										<h2>{$item.title}</h2>
+										<div class="note">
+											<p>{$item.description}</p>
+											<p class="gray">{$item.note}</p>								
+										</div>
+										<a href="#" name="details">show details</a>
 									</div>
-									<a href="#" name="details">show details</a>
-								</div>
-							</li>
-						{/foreach}
-					</ul>
+								</li>
+							{/foreach}
+						</ul>
+					</div>
 					<div class="btns clearfix">
 						<a href="#" class="btn left" id="prev"><i></i><span>Prev</span></a>
 						<a href="#" class="btn right" id="next"><span>Next</span><i></i></a>
