@@ -1,3 +1,12 @@
 .slider-b {
 	border: 2px solid #d3d3d3;
 }
+.slider-l-i {
+	display: inline;
+}
+.list-wrap, .slider-l {
+	height: 300px!important;
+}
+.slider-l-i-content {
+	display: block;
+}

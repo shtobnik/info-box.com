@@ -239,11 +239,14 @@ th {
 	color: #fff;
 	text-shadow: none;
 }
-
+header, nav, section, article, aside, footer {
+   display:block;
+}
 /*------------------------------------main css--------------------------------------*/
 
 
 .wrapper {
+	display: block;
 	margin: 200px auto 0;
 	width: 325px;
 }
@@ -323,6 +326,9 @@ h1 {
 .btns {
 	margin-left: 12px;
 	margin-top: 20px;
+}
+.btns-b {
+	float: left;
 }
 .btn span, .btn i {
 	background: #fffefe; /* Old browsers */

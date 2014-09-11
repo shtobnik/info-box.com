@@ -1,8 +1,8 @@
-<?php /* Smarty version 2.6.28, created on 2014-09-10 22:35:34
+<?php /* Smarty version 2.6.28, created on 2014-09-11 14:32:39
          compiled from index.tpl */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
-smarty_core_load_plugins(array('plugins' => array(array('function', 'json', 'index.tpl', 19, false),)), $this); ?>
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 //EN" "http://www.w3.org/TR/html4/strict.dtd">
+smarty_core_load_plugins(array('plugins' => array(array('function', 'json', 'index.tpl', 28, false),)), $this); ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR...ml1/DTD/xhtml1-strict.dtd">
 <html>
 
 	<head>
@@ -12,8 +12,17 @@ smarty_core_load_plugins(array('plugins' => array(array('function', 'json', 'ind
 		<meta http-equiv="content-language" content="ru">
 		<link rel="stylesheet" type="text/css" href="css/main.css" media="all">
 		<!--[if IE 8]></script><link rel="stylesheet" type="text/css" href="css/ie.css" media="all"><![endif]-->
-		<!--[if lte IE 9]><link rel="stylesheet" type="text/css" href="/css/ie.css" media="all"><![endif]-->
 		<!--[if lte IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+		<!--[if lt IE 9]>
+			<script>
+				document.createElement('header');
+				document.createElement('nav');
+				document.createElement('section');
+				document.createElement('article');
+				document.createElement('aside');
+				document.createElement('footer');
+			</script>
+		<![endif]-->
 		<script src="js/jquery-1.9.1.min.js"></script>
 		<script src="js/jquery.carouFredSel-6.2.1.js"></script>
 		<script type="text/javascript" src="js/main.js"></script>
@@ -55,8 +64,10 @@ smarty_core_load_plugins(array('plugins' => array(array('function', 'json', 'ind
 						</ul>
 					</div>
 					<div class="btns clearfix">
-						<a href="#" class="btn left" id="prev"><i></i><span>Prev</span></a>
-						<a href="#" class="btn right" id="next"><span>Next</span><i></i></a>
+						<div class="btns-b">
+							<a href="#" class="btn left" id="prev"><i></i><span>Prev</span></a>
+							<a href="#" class="btn right" id="next"><span>Next</span><i></i></a>
+						</div>
 						<a href="<?php echo $this->_tpl_vars['item']['productUrl']; ?>
 " class="btn right store"><span>Find a Store</span><i></i></a>
 					</div>
