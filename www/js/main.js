@@ -61,7 +61,6 @@ $(window).load(function() {
 			$(this).on("click", function() {
 
 				var this_ = $(this),
-
 					par = this_.parent(".slider-l-i-content");
 					
 					if( this_.hasClass('show-text') ){
