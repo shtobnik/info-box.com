@@ -21,24 +21,55 @@
 		<![endif]-->
 		<script src="js/jquery-1.9.1.min.js"></script>
 		<script type="text/javascript" src="js/handlebars-v2.0.0.js"></script>
+		<script src="js/jquery.carouFredSel-6.2.1.js"></script>
 		<script type="text/javascript" src="js/main.js"></script>
 	</head>
 
 	<body>
-		<script id="student-template" type="text/x-handlebars-template">
-			<ul>
+
+		<script id="list-template" type="text/x-handlebars-template">
 				{{#each items}}
-					<li>
-						<h1>{{ this.title }}</h1>
-						<p>{{ this.description }}</p>
+					<li class="slider-l-i">
+						<img src="/img/photos/{{ this.img }}">
+						<div class="slider-l-i-content">
+							<h2>{{ this.title }}</h2>
+							<div class="note">
+								<p>{{ this.description }}</p>
+								<p class="gray">{{ this.note }}</p>								
+							</div>
+							<a href="#" name="details">show details</a>
+						</div>
 					</li>
 				{{/each}}
-			</ul>
 		</script>
+
+
+		<div class="wrapper">
+			<header>
+				<h1>json task</h1>
+			</header>
+
+			<div class="slider-b">
+
+				<section class="slider-content">
+					<div class="list-wrap" id="slider-wrap">
+						<ul class="slider-l" id="slider">
+						</ul>
+					</div>
+					<div class="btns clearfix">
+						<div class="btns-b">
+							<a href="#" class="btn left" id="prev"><i></i><span>Prev</span></a>
+							<a href="#" class="btn right" id="next"><span>Next</span><i></i></a>
+						</div>
+						<a href="#" class="btn right store"><span>Find a Store</span><i></i></a>
+					</div>
+				</section>
+
+			</div>
+		</div>
+
+
 	</body>
 
-	<div id="my-container">
-		
-	</div>
 
 </html>
